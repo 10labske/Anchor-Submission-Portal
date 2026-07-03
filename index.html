@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Submit your property for sale. Fast, free listing with professional review by our real estate team.">
-  <title>Sell Your Property Faster | Property Submission</title>
+  <meta name="description" content="Submit your property for sale through Anchor Submission Portal. Fast, free listing with professional review by our team.">
+  <title>Sell Your Property Faster | Anchor Submission Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -15,11 +15,27 @@
   <!-- Navigation -->
   <header class="site-header" id="top">
     <nav class="nav container">
-      <a href="#top" class="nav__logo" aria-label="Home">
-        <svg class="nav__logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <path d="M4 14L16 4l12 10v14H20V20h-8v8H4V14z" fill="currentColor"/>
-        </svg>
-        <span>PrimeEstate</span>
+      <a href="#top" class="nav__logo" aria-label="Anchor Submission Portal — Home">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg class="nav__logo-icon" viewBox="0 0 32 32" fill="none">
+            <defs>
+              <linearGradient id="anchorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#d4a853"/>
+                <stop offset="100%" stop-color="#c49a3c"/>
+              </linearGradient>
+            </defs>
+            <circle cx="16" cy="6" r="2.75" stroke="url(#anchorGrad)" stroke-width="1.75" fill="none"/>
+            <path d="M16 8.5v14.5" stroke="url(#anchorGrad)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 14h12" stroke="url(#anchorGrad)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M11.5 22.5c0 0 2.5 3.5 4.5 3.5s4.5-3.5 4.5-3.5" stroke="url(#anchorGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M9 18.5c-2 2.5-2.5 5.5-1 7.5 2 2.5 5.5 2 8-0.5" stroke="url(#anchorGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M23 18.5c2 2.5 2.5 5.5 1 7.5-2 2.5-5.5 2-8-0.5" stroke="url(#anchorGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">
+          <span class="nav__logo-anchor">Anchor</span>
+          <span class="nav__logo-portal">Submission Portal</span>
+        </span>
       </a>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -172,7 +188,7 @@
               </div>
               <div class="form-field">
                 <label for="phone">Phone Number <span class="required-mark">*</span></label>
-                <input type="tel" id="phone" name="phone" required maxlength="20" autocomplete="tel" placeholder="+254 700 000 000">
+                <input type="tel" id="phone" name="phone" required maxlength="20" autocomplete="tel" placeholder="+1 (310) 555-0100">
                 <span class="form-field__error" id="phoneError"></span>
               </div>
             </div>
@@ -203,7 +219,7 @@
             <div class="form-row">
               <div class="form-field">
                 <label for="propertyTitle">Property Title <span class="required-mark">*</span></label>
-                <input type="text" id="propertyTitle" name="propertyTitle" required maxlength="150" placeholder="e.g. Modern 4-Bedroom Villa in Karen">
+                <input type="text" id="propertyTitle" name="propertyTitle" required maxlength="150" placeholder="e.g. Modern 4-Bedroom Home in Beverly Hills">
                 <span class="form-field__error" id="propertyTitleError"></span>
               </div>
               <div class="form-field">
@@ -233,23 +249,23 @@
             <div class="form-row form-row--3">
               <div class="form-field">
                 <label for="county">County <span class="required-mark">*</span></label>
-                <input type="text" id="county" name="county" required maxlength="80" placeholder="Nairobi">
+                <input type="text" id="county" name="county" required maxlength="80" placeholder="Orange County">
                 <span class="form-field__error" id="countyError"></span>
               </div>
               <div class="form-field">
                 <label for="city">City <span class="required-mark">*</span></label>
-                <input type="text" id="city" name="city" required maxlength="80" placeholder="Nairobi">
+                <input type="text" id="city" name="city" required maxlength="80" placeholder="Los Angeles">
                 <span class="form-field__error" id="cityError"></span>
               </div>
               <div class="form-field">
-                <label for="estate">Estate</label>
-                <input type="text" id="estate" name="estate" maxlength="80" placeholder="Karen">
+                <label for="estate">Neighborhood</label>
+                <input type="text" id="estate" name="estate" maxlength="80" placeholder="Beverly Hills">
               </div>
             </div>
             <div class="form-row">
               <div class="form-field">
                 <label for="address">Street Address <span class="required-mark">*</span></label>
-                <input type="text" id="address" name="address" required maxlength="200" placeholder="123 Main Street">
+                <input type="text" id="address" name="address" required maxlength="200" placeholder="1234 Sunset Blvd, Apt 5">
                 <span class="form-field__error" id="addressError"></span>
               </div>
               <div class="form-field">
@@ -292,6 +308,7 @@
               <div class="form-field">
                 <label for="sizeUnit">Size Unit</label>
                 <select id="sizeUnit" name="sizeUnit">
+                  <option value="Square Feet">Square Feet</option>
                   <option value="Square Metres">Square Metres</option>
                   <option value="Acres">Acres</option>
                   <option value="Hectares">Hectares</option>
@@ -304,8 +321,8 @@
               <div class="form-field">
                 <label for="currency">Currency</label>
                 <select id="currency" name="currency">
-                  <option value="KES">KES</option>
                   <option value="USD">USD</option>
+                  <option value="KES">KES</option>
                 </select>
               </div>
             </div>
@@ -429,10 +446,19 @@
   <footer class="site-footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 14L16 4l12 10v14H20V20h-8v8H4V14z" fill="currentColor"/></svg>
-        <span>PrimeEstate</span>
+        <span class="footer__logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="6" r="2.75" stroke="currentColor" stroke-width="1.75" fill="none"/>
+            <path d="M16 8.5v14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 14h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M11.5 22.5c0 0 2.5 3.5 4.5 3.5s4.5-3.5 4.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M9 18.5c-2 2.5-2.5 5.5-1 7.5 2 2.5 5.5 2 8-0.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M23 18.5c2 2.5 2.5 5.5 1 7.5-2 2.5-5.5 2-8-0.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+        </span>
+        <span>Anchor Submission Portal</span>
       </div>
-      <p class="footer__copy">&copy; 2026 PrimeEstate. All rights reserved.</p>
+      <p class="footer__copy">&copy; 2026 Anchor Submission Portal. All rights reserved.</p>
     </div>
   </footer>
 
