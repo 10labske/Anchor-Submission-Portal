@@ -2,6 +2,8 @@
 
 A production-ready property submission web application that allows property owners to submit their properties for sale. Features client-side image and video compression, drag-and-drop media uploads, and a Google Apps Script backend that stores data in Google Drive and Google Sheets.
 
+> **New to this project?** Start with **[SETUP-GUIDE.md](SETUP-GUIDE.md)** — a complete step-by-step guide covering Google Sheet, Drive, Apps Script, deployment, testing, and GitHub.
+
 ## Features
 
 - Premium real estate landing page design (dark blue + gold accents)
@@ -21,9 +23,11 @@ A production-ready property submission web application that allows property owne
 ├── index.html        # Landing page and submission form
 ├── styles.css        # Premium real estate styles
 ├── script.js         # Form logic, compression, and API calls
-├── appsscript.gs     # Google Apps Script backend
-├── appsscript.json   # Apps Script manifest
-└── README.md         # This file
+├── appsscript.gs     # Google Apps Script backend (DO NOT upload to public GitHub)
+├── appsscript.json   # Apps Script manifest (DO NOT upload to public GitHub)
+├── SETUP-GUIDE.md    # Complete step-by-step setup guide (START HERE)
+├── README.md         # Project overview and reference
+└── .gitignore        # Blocks private backend files from Git commits
 ```
 
 ---
@@ -289,7 +293,7 @@ On XAMPP/local hosting these headers are usually not set, so videos upload in th
 
 ### Branding
 
-- Change **PrimeEstate** in `index.html` (logo text and footer).
+- Change **Anchor Submission Portal** branding in `index.html` (logo text and footer).
 - Update CSS custom properties in `styles.css` (`:root` block) for colors.
 - Replace the hero SVG illustration with your own image.
 
@@ -302,7 +306,7 @@ Add or remove fields in three places:
 
 ### Timezone
 
-Change `timeZone` in `appsscript.json` (default: `Africa/Nairobi`).
+Change `timeZone` in `appsscript.json` (default: `America/New_York`).
 
 ---
 
